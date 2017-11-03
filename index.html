@@ -5,8 +5,106 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo"> 
+          <img src="img/index-logo.svg" width="100" height="100" alt="Логотип Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="index.html#studio">Студия</a></li>
+          <li><a href="index.html#clients">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+        <ul class="basket">
+          <li class="basket-link">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
+      <div class="bg-image">
+        <!-- Див для фоновой картинки, внутри которого будет еще один див Долго, дорого и т.д.-->
+        <div>
+          <p><b>Долго, дорого, скрупулезно.</b></p>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="">Узнать больше</a> <!-- не уверена, что правильно -->
+        </div>
+      </div>
+      <section class="services">
+          <h2 class="visually-hidden">Наши услуги</h2>
+          <ul class="services-list">
+            <li class="services-item">
+              <img src="img/pic-name1.jpg" width="100" height="100" alt="Картинка веб-сайт"><!--не уверена, контентное изображение или декоративное-->
+              <h3>Веб-сайты</h3>
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <!--Кнопка заказать -->
+            </li>
+            <li class="services-item">
+              <img src="img/pic-name2.jpg" width="100" height="100" alt="Приложения"><!--не уверена, контентное изображение или декоративное-->
+              <h3>Приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <!--Кнопка заказать -->
+            </li>
+            <li class="services-item">
+              <img src="img/pic-name3.jpg" width="100" height="100" alt="Презентации"> <!--не уверена, контентное изображение или декоративное-->
+              <h3>Презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <!--Кнопка заказать -->
+            </li>
+          </ul>
+      </section>
+      <section class="about">
+          <h2 class="visually-hidden">Про Нёрдс</h2>
+          <p><b>Мы -  маленькая, но гордая дизайн-студия из Краснодара.</b></p> 
+          <p>Исповедуем принципы минимализма и чистоты.
+            Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку:</h3> 
+            <ul class="orders">
+              <li>Веб-сайтов любой сложности </li>
+              <li>Мобильных приложений для iOS и Android </li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul> 
+            <a class="logo-in-about"> 
+              <img src="img/index-logo.svg" width="100" height="100" alt="Логотип Нёрдс в секции О нас">
+            </a> <!--не уверена, что эту часть нужно размечать тегом а-->
+            <h3>С 2004 года любим точность во всем:</h3>
+            <table class statistics>
+              <tr>
+                <td class="stat-mean">146%</td>
+                <td class="stat-mean">100%</td>
+                <td class="stat-mean">50%</td>
+              </tr>
+              <tr>
+                <th class="stat-header">Уровень самоотдачи</th>
+                <th class="stat-header">Соблюдение сроков</th>
+                <th class="stat-header">Минимальная предоплата</th>
+              </tr>
+            </table>
+      </section>
+      <section class="our-clients">
+          <h2 class="visually-hidden">Наши клиенты</h2>
+          <ul class="client-list">
+            <li>
+              <img src="img/pic-name5.svg" width="100" height="100" alt="Html academy">
+            </li>
+            <li>
+              <img src="img/pic-name6.svg" width="100" height="100" alt="Barbershop">
+            </li>
+            <li>
+              <img src="img/pic-name7.svg" width="100" height="100" alt="Pink">
+            </li>
+            <li>
+              <img src="img/pic-name8.svg" width="100" height="100" alt="Mishka">
+            </li>
+          </ul>
+      </section>
+      <section class="our-contacts">
+          <h2 class="visually-hidden">Контактная информация</h2>
+      </section>
+    </main>
+    <footer>
+    
+    </footer>
   </body>
 </html>
