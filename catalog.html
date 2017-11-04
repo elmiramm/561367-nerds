@@ -11,9 +11,9 @@
           <img src="img/index-logo.svg" width="100" height="100" alt="Логотип Нёрдс">
         </a>
         <ul class="site-navigation">
-          <li><a href="#studio">Студия</a></li>
-          <li><a href="#clients">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="index.html#studio">Студия</a></li>
+          <li><a href="index.html#clients">Клиенты</a></li>
+          <li><a class="site-navigation-current" href="catalog.html">Магазин</a></li>
           <li><a href="#contacts">Контакты</a></li>
         </ul>
         <ul class="basket">
@@ -21,3 +21,145 @@
         </ul>
       </nav>
     </header>
+    <main class="container">
+      <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
+      <div class="for-subtitle">
+        <h2 class="subtitle">Магазин готовых шаблонов</h2>
+      </div>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form action="#" method="get">
+           <div class="form-for-cost">
+            <label for="cost">Стоимость:</label><br>
+            <input type="range" min="1" max="15000" step="1" id="cost" name="c"><br>
+            <label for="from">От</label>
+            <input type="text" id="from" name="f" value="0">
+            <label for="to">до</label>
+            <input type="text" id="to" name="t" value="15000">
+          </div>
+          <div class="form-for-grid">
+           <fieldset>
+             <legend>Сетка:</legend>
+              <label for="adapt">Адаптивная</label>
+              <input type="radio" id="adapt" name="ad"  checked>
+              <label for="fixed">Фиксированная</label>
+              <input type="radio" id="fixed" name="fix">
+              <label for="rubber">Резиновая</label>
+              <input type="radio" id="rubber" name="rud">
+            </fieldset>
+          </div>
+          <div class="form-for-features">
+            <fieldset>
+             <legend>Особенности:</legend>
+                <label for="checkbox-slider">Слайдер</label>
+                <input type="checkbox" id="checkbox-slider" name="ch-box-slider" checked>
+                <label for="checkbox-features">Блок преимуществ</label>
+                <input type="checkbox" id="checkbox-features" name="ch-box-features">
+                <label for="checkbox-news">Новости</label>
+                <input type="checkbox" id="checkbox-news" name="ch-box-news" checked>
+                <label for="checkbox-basket">Корзина</label>
+                <input type="checkbox" id="checkbox-basket" name="ch-box-basket">
+            </fieldset>
+            </div>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список макетов</h2>
+        <h3>Сортировать:</h3>
+        <ul class="sorting">
+          <li class="sorting-item-1">По цене</li>
+          <li class="sorting-item-2">По типу</li>
+          <li class="sorting-item-3">По названию</li>
+        </ul>
+        <!--кнопки вверх-вниз-->
+        <ul class="up-down">
+          <li><span class="black">&#9660;</span></li>
+          <li><span class="grey">&#9650;</span></li>
+        </ul>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <img src="#" width="100" height="100" alt="Макет Sedona">
+            <div class="product-card">
+              <h3><a href="#">Sedona</a></h3>
+              <p>Информационный сайт<br> для туристов</p>
+              <a class="price-btn" href="#">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="#" width="100" height="100" alt="Макет PINK APP">
+            <div class="product-card">
+              <h3><a href="">PINK APP</a></h3>
+              <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+              <a class="price-btn" href="#">9 900 руб.</a>
+            </div>
+          </li> 
+          <!--Перепроверить после установки фотошопа, цены в том числе (до окончания дива)-->
+          <li class="catalog-item">
+            <img src="#" width="100" height="100" alt="Макет Barbershop">
+            <div class="product-card">
+              <h3><a href="">ссылка на барбершоп</a></h3>
+              <p>текст от барбершоп</p>
+              <a class="price-btn" href="#">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="#" width="100" height="100" alt="Макет Mishka">
+            <div class="product-card">
+              <h3><a href="">ссылка на мишка</a></h3>
+              <p>текст от мишка</p>
+               <a class="price-btn" href="#">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="#" width="100" height="100" alt="Макет A+">
+            <div class="product-card">
+              <h3><a href="">ссылка на макет а+</a></h3>
+              <p>текст от а+</p>
+               <a class="price-btn" href="#">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="#" width="100" height="100" alt="Макет Кваст">
+            <div class="product-card">
+              <h3><a href="">ссылка на кваст</a></h3>
+              <p>текст от кваст</p>
+               <a class="price-btn" href="#">9 900 руб.</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+    </main>
+     <footer>
+      <section class="our-contacts">
+        <h2 class="visually-hidden" id="contacts">Контактная информация</h2>
+        <img src="img/map.jpg" width="100" height="100" alt="Nёrds на карте">
+        <section class="write to us">
+        <h3>Nёrds design studio</h3>
+        <p>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+        </p>
+         <p>
+          Телефон: +7(812) 275-75-75
+        </p>
+        <a class="btn" href="#">Напишите нам</a>
+        </section>
+      </section>
+      <div class="footer-social">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
