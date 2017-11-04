@@ -11,13 +11,13 @@
           <img src="img/index-logo.svg" width="100" height="100" alt="Логотип Нёрдс">
         </a>
         <ul class="site-navigation">
-          <li><a href="index.html#studio">Студия</a></li>
-          <li><a href="index.html#clients">Клиенты</a></li>
+          <li><a href="#studio">Студия</a></li>
+          <li><a href="#clients">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="index.html#contacts">Контакты</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </ul>
         <ul class="basket">
-          <li class="basket-link">Корзина</li>
+          <li class="basket-link"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -28,7 +28,7 @@
         <div>
           <p><b>Долго, дорого, скрупулезно.</b></p>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="">Узнать больше</a> <!-- не уверена, что правильно -->
+          <a href="#">Узнать больше</a>
         </div>
       </div>
       <section class="services">
@@ -38,24 +38,24 @@
               <img src="img/pic-name1.jpg" width="100" height="100" alt="Картинка веб-сайт"><!--не уверена, контентное изображение или декоративное-->
               <h3>Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <!--Кнопка заказать -->
+              <a class="order-button button-1" href="#">Заказать</a>
             </li>
             <li class="services-item">
               <img src="img/pic-name2.jpg" width="100" height="100" alt="Приложения"><!--не уверена, контентное изображение или декоративное-->
               <h3>Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <!--Кнопка заказать -->
+              <a class="order-button button-2" href="#">Заказать</a>
             </li>
             <li class="services-item">
               <img src="img/pic-name3.jpg" width="100" height="100" alt="Презентации"> <!--не уверена, контентное изображение или декоративное-->
               <h3>Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <!--Кнопка заказать -->
+              <a class="order-button button-3" href="#">Заказать</a>
             </li>
           </ul>
       </section>
       <section class="about">
-          <h2 class="visually-hidden">Про Нёрдс</h2>
+          <h2 class="visually-hidden" id="studio">Про Нёрдс</h2>
           <p><b>Мы -  маленькая, но гордая дизайн-студия из Краснодара.</b></p> 
           <p>Исповедуем принципы минимализма и чистоты.
             Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -67,13 +67,13 @@
             </ul> 
             <a class="logo-in-about"> 
               <img src="img/index-logo.svg" width="100" height="100" alt="Логотип Нёрдс в секции О нас">
-            </a> <!--не уверена, что эту часть нужно размечать тегом а-->
+            </a>
             <h3>С 2004 года любим точность во всем:</h3>
-            <table class statistics>
+            <table class="statistics">
               <tr>
-                <td class="stat-mean">146%</td>
-                <td class="stat-mean">100%</td>
-                <td class="stat-mean">50%</td>
+                <td class="stat-mean">146<sup>%</sup></td>
+                <td class="stat-mean">100<sup>%</sup></td>
+                <td class="stat-mean">50<sup>%</sup></td>
               </tr>
               <tr>
                 <th class="stat-header">Уровень самоотдачи</th>
@@ -83,28 +83,58 @@
             </table>
       </section>
       <section class="our-clients">
-          <h2 class="visually-hidden">Наши клиенты</h2>
+          <h2 class="visually-hidden" id="clients">Наши клиенты</h2>
           <ul class="client-list">
             <li>
-              <img src="img/pic-name5.svg" width="100" height="100" alt="Html academy">
+              <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/pic-name4.svg" width="100" height="100" alt="Html academy">
+              </a>
             </li>
             <li>
-              <img src="img/pic-name6.svg" width="100" height="100" alt="Barbershop">
+              <a href="#">
+              <img src="img/pic-name5.svg" width="100" height="100" alt="Barbershop">
+              </a>
             </li>
             <li>
-              <img src="img/pic-name7.svg" width="100" height="100" alt="Pink">
+              <a href="#">
+              <img src="img/pic-name6.svg" width="100" height="100" alt="Pink">
+              </a>
             </li>
             <li>
-              <img src="img/pic-name8.svg" width="100" height="100" alt="Mishka">
+              <a href="#">
+              <img src="img/pic-name7.svg" width="100" height="100" alt="Mishka">
+              </a>
             </li>
           </ul>
-      </section>
-      <section class="our-contacts">
-          <h2 class="visually-hidden">Контактная информация</h2>
-      </section>
+        </section>
     </main>
     <footer>
-    
+      <section class="our-contacts">
+        <h2 class="visually-hidden" id="contacts">Контактная информация</h2>
+        <section class="map">
+          <img src="img/map.jpg" width="100" height="100" alt="Nёrds на карте">
+        </section>
+        <section class="write to us">
+        <h3>Nёrds design studio</h3>
+        <p>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+        </p>
+         <p>
+          Телефон: +7(812) 275-75-75
+        </p>
+        <a href="#">Напишите нам</a>
+        </section>
+      </section>
+      <div class="footer-social">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
