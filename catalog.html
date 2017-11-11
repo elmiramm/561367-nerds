@@ -6,9 +6,9 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-lebel="Содержимое">
         <a class="main-header-logo" href="index.html"> 
-          <img src="img/nerds-logo.svg" width="" height="" alt="Логотип Нёрдс">
+          <img src="img/nerds-logo.svg" width="140" height="49" alt="Ссылка на главную страницу Нёрдс">
         </a>
         <ul class="site-navigation">
           <li><a href="index.html#studio">Студия</a></li>
@@ -26,43 +26,48 @@
       <div class="for-subtitle">
         <h2 class="subtitle">Магазин готовых шаблонов</h2>
       </div>
-      <section class="filters">
+      
+       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="#" method="get">
-          <div class="form-for-cost">
-            <label for="cost">Стоимость:</label><br>
-            <input type="range" min="1" max="15000" step="1" id="cost" name="c"><br>
-            <label for="from">От</label>
-            <input type="text" id="from" name="f" value="0">
-            <label for="to">до</label>
-            <input type="text" id="to" name="t" value="15000">
+        <form class="filters-item" action="echo.htmlacademy.ry" method="get">
+          <div class="filter-for-cost">
+             <fieldset>
+                <legend>Стоимость:</legend>
+                <label for="cost"></label><br>
+                <input type="range" min="1" max="15000" step="1" id="cost" name="filter-cost"><br>
+                <label for="from">От</label>
+                <input type="text" id="from" name="filter-from" value="0">
+                <label for="to">до</label>
+                <input type="text" id="to" name="filter-to" value="15000">
+            </fieldset>
           </div>
           <div class="form-for-grid">
             <fieldset>
               <legend>Сетка:</legend>
+                <input type="radio" id="adapt" name="filter-grid"  checked>
                 <label for="adapt">Адаптивная</label>
-                <input type="radio" id="adapt" name="ad"  checked>
+                <input type="radio" id="fixed" name="filter-grid">
                 <label for="fixed">Фиксированная</label>
-                <input type="radio" id="fixed" name="fix">
+                <input type="radio" id="rubber" name="filter-grid">
                 <label for="rubber">Резиновая</label>
-                <input type="radio" id="rubber" name="rud">
             </fieldset>
           </div>
           <div class="form-for-features">
             <fieldset>
              <legend>Особенности:</legend>
-                <label for="checkbox-slider">Слайдер</label>
                 <input type="checkbox" id="checkbox-slider" name="ch-box-slider" checked>
-                <label for="checkbox-features">Блок преимуществ</label>
+                <label for="checkbox-slider">Слайдер</label>
                 <input type="checkbox" id="checkbox-features" name="ch-box-features">
-                <label for="checkbox-news">Новости</label>
+                <label for="checkbox-features">Блок преимуществ</label>
                 <input type="checkbox" id="checkbox-news" name="ch-box-news" checked>
-                <label for="checkbox-basket">Корзина</label>
+                <label for="checkbox-news">Новости</label>
                 <input type="checkbox" id="checkbox-basket" name="ch-box-basket">
+                <label for="checkbox-basket">Корзина</label>
             </fieldset>
-            </div>
+          </div>
         </form>
       </section>
+      
       <section class="catalog">
         <h2 class="visually-hidden">Список макетов</h2>
         <h3>Сортировать:</h3>
@@ -72,56 +77,56 @@
           <li class="sorting-item">По названию</li>
         </ul>
         <ul class="up-down">
-          <li><span class="arrow active">&#9660;</span></li>
-          <li><span class="arrow">&#9650;</span></li>
+          <li><button class="btn-arrow active" type="button">&#9660;</button></li>
+          <li><button class="btn-arrow" type="button">&#9650;</button></li>
         </ul>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <img src="img/img-sedona.jpg" width="" height="" alt="Макет Sedona">
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Sedona">
             <div class="product-card">
               <h3><a href="#">Sedona</a></h3>
               <p>Информационный сайт<br> для туристов</p>
-              <a class="price-btn" href="#">9 900 руб.</a>
+              <button class="price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/img-pink.jpg" width="" height="" alt="Макет PINK APP">
+            <img src="img/img-pink.jpg" width="360" height="576" alt="Макет PINK APP">
             <div class="product-card">
               <h3><a href="#">PINK APP</a></h3>
               <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
-              <a class="price-btn" href="#">9 900 руб.</a>
+              <button class="price-btn" type="button">9 900 руб.</button>
             </div>
           </li> 
           <li class="catalog-item">
-            <img src="img/img-barbershop.jpg" width="" height="" alt="Макет Barbershop">
+            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Barbershop">
             <div class="product-card">
               <h3><a href="">BARBERSHOP</a></h3>
               <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
-              <a class="price-btn" href="#">9 900 руб.</a>
+              <button class="price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/img-mishka.jpg" width="" height="" alt="Макет Mishka">
+            <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Mishka">
             <div class="product-card">
               <h3><a href="">MISHKA</a></h3>
               <p>Интернет-магазин<br>вязаных игрушек</p>
-              <a class="price-btn" href="#">9 900 руб.</a>
+              <button class="price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/img-aplus.jpg" width="" height="" alt="Макет A+">
+            <img src="img/img-aplus.jpg" width="360" height="576" alt="Макет A+">
             <div class="product-card">
               <h3><a href="img/img-aplus.jpg">A PLUS</a></h3>
               <p>Лендинг курсов повышения<br>квалификации</p>
-              <a class="price-btn" href="#">9 900 руб.</a>
+              <button class="price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/img-kvast.jpg" width="" height="" alt="Макет Кваст">
+            <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваст">
             <div class="product-card">
               <h3><a href="">КВАСТ</a></h3>
               <p>Промо-сайт производителя<br>крафтового кваса</p>
-              <a class="price-btn" href="#">9 900 руб.</a>
+              <button class="price-btn" type="button">9 900 руб.</button>
             </div>
           </li>
         </ul>
@@ -132,11 +137,13 @@
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </section>
+      
     </main>
-    <footer>
+       <footer class="page-footer">
+     
       <section class="our-contacts">
         <h2 class="visually-hidden" id="contacts">Контактная информация</h2>
-        <img src="img/map.png" width="" height="" alt="Nёrds на карте">
+        <img src="img/map.png" width="1440" height="416" alt="Расположение Nёrds на карте по адресу Санкт-Петербург ул. Б. Конюшенная, д. 19/8">
         <div class="write-us">
           <h3>Nёrds design studio</h3>
           <p>
@@ -146,9 +153,10 @@
           <p>
             Телефон: +7(812) 275-75-75
           </p>
-          <button>Напишите нам</button>
+          <button class="btn-write-us" type="button">Напишите нам</button>
         </div>
       </section>
+      
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -159,7 +167,8 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div> 
     </footer>
-    <section class="modal-contacts">
+    
+     <section class="modal-contacts">
       <h2>Напишите нам</h2>
       <span class="modal-close">x</span>
     </section>

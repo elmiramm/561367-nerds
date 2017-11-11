@@ -6,9 +6,9 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-label="Содержимое">
         <a class="main-header-logo"> 
-          <img src="img/nerds-logo.svg" width="" height="" alt="Логотип Нёрдс">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
         </a>
         <ul class="site-navigation">
           <li><a href="#studio">Студия</a></li>
@@ -24,7 +24,9 @@
       </nav>
     </header>
     <main class="container">
+     
       <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
+      
       <div class="slider">
        <!-- Начало переключателей -->
   
@@ -59,29 +61,31 @@
        <!-- Конец третьего слайда -->
         </div>
       </div>
+      
       <section class="services">
         <h2 class="visually-hidden">Наши услуги</h2>
         <ul class="services-list">
           <li class="services-item">
-            <img src="img/illustration-1.png" width="" height="" alt="Картинка веб-сайт">
+            <img src="img/illustration-1.png" width="300" height="146" alt="">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="order-button button-1" href="#">Заказать</a>
           </li>
           <li class="services-item">
-            <img src="img/illustration-2.png" width="" height="" alt="Приложения">
+            <img src="img/illustration-2.png" width="300" height="146" alt="">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="order-button button-2" href="#">Заказать</a>
           </li>
           <li class="services-item">
-            <img src="img/illustration-3.png" width="" height="" alt="Презентации"> 
+            <img src="img/illustration-3.png" width="300" height="146" alt=""> 
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="order-button button-3" href="#">Заказать</a>
           </li>
         </ul>
       </section>
+      
       <section class="about">
         <h2 class="visually-hidden" id="studio">Про Нёрдс</h2>
         <div class="about-left-part">
@@ -98,7 +102,7 @@
         <div class="about-right-part">
           <h2 class="visually-hidden">Статистика по Нёрдс</h2>
           <a class="logo-in-about"> 
-              <img src="img/nerds-illustration.png" width="" height="" alt="Логотип Нёрдс в секции О нас">
+              <img src="img/nerds-illustration.png" width="360" height="280" alt="Логотип Нёрдс в секции О нас">
           </a>
           <h3>С 2004 года любим точность во всем:</h3>
           <table class="statistics">
@@ -115,36 +119,38 @@
           </table>
         </div>
       </section>
+      
       <section class="our-clients">
         <h2 class="visually-hidden" id="clients">Наши клиенты</h2>
         <ul class="client-list">
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-1.png" width="" height="" alt="Html academy">
+              <img src="img/logo-1.png" width="199" height="68" alt="Ссылка на сайт Html academy">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-2.png" width="" height="" alt="Barbershop">
+              <img src="img/logo-2.png" width="209" height="87" alt="Ссылка на сайт Barbershop">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-3.png" width="" height="" alt="Pink">
+              <img src="img/logo-3.png" width="185" height="52" alt="Ссылка на сайт Pink">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-4.png" width="" height="" alt="Mishka">
+              <img src="img/logo-4.png" width="173" height="84" alt="Ссылка на сайт Mishka">
             </a>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
+     
       <section class="our-contacts">
         <h2 class="visually-hidden" id="contacts">Контактная информация</h2>
-        <img src="img/map.png" width="" height="" alt="Nёrds на карте">
+        <img src="img/map.png" width="1440" height="416" alt="Расположение Nёrds на карте по адресу Санкт-Петербург ул. Б. Конюшенная, д. 19/8">
         <div class="write-us">
           <h3>Nёrds design studio</h3>
           <p>
@@ -154,9 +160,10 @@
           <p>
             Телефон: +7(812) 275-75-75
           </p>
-          <button>Напишите нам</button>
+          <button class="btn-write-us" type="button">Напишите нам</button>
         </div>
       </section>
+      
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -167,9 +174,25 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div> 
     </footer>
-    <section class="modal-contacts">
+    
+    <section class="modal-contacts" tabindex="-1">
       <h2>Напишите нам</h2>
-      <span class="modal-close">x</span>
+      <form class="modal-write-us" action="echo.htmlacademy.ru" method="get">
+        <p>
+          <label for="user-name">Ваше имя:</label><br>
+          <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label><br>
+          <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">
+        </p>
+        <p>
+        <label for="text-letter">Текст письма:</label><br>
+        <textarea name="letter" id="text-letter" cols="70" rows="3">В свободной форме</textarea>
+        </p>
+        <button class="btn-send" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" area-label="Закрыть модальное окно Напишите нам">x</button>
     </section>
   </body>
 </html>
