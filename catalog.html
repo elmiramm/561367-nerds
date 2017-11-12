@@ -29,17 +29,17 @@
       
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <div class="filter-for-cost" aria-label="Стоимость">
-          <h3>Стоимость:</h3>
-          <div class="cost-slider">
-            <span>Ползунок</span>
-          </div>
-          <label for="from">От</label>
-          <input type="text" id="from" name="filter-from" value="0">
-          <label for="to">до</label>
-          <input type="text" id="to" name="filter-to" value="15000">
-        </div>
         <form class="filters-item" action="echo.htmlacademy.ry" method="get">
+          <fieldset class="filter-for-cost">
+            <legend>Стоимость:</legend>
+            <div class="cost-slider">
+              <span>Ползунок</span>
+            </div>
+            <label for="from">От</label>
+            <input type="text" id="from" name="filter-from" value="0">
+            <label for="to">до</label>
+            <input type="text" id="to" name="filter-to" value="15000">
+          </fieldset>
           <fieldset class="form-for-grid">
             <legend>Сетка:</legend>
             <input type="radio" id="adapt" name="filter-grid"  checked>
@@ -49,19 +49,17 @@
             <input type="radio" id="rubber" name="filter-grid">
             <label for="rubber">Резиновая</label>
           </fieldset>
-          <div class="form-for-features">
-            <fieldset>
-              <legend>Особенности:</legend>
-              <input type="checkbox" id="checkbox-slider" name="ch-box-slider" checked>
-              <label for="checkbox-slider">Слайдер</label>
-              <input type="checkbox" id="checkbox-features" name="ch-box-features">
-              <label for="checkbox-features">Блок преимуществ</label>
-              <input type="checkbox" id="checkbox-news" name="ch-box-news" checked>
-              <label for="checkbox-news">Новости</label>
-              <input type="checkbox" id="checkbox-basket" name="ch-box-basket">
-              <label for="checkbox-basket">Корзина</label>
-            </fieldset>
-          </div>
+          <fieldset class="form-for-features">
+            <legend>Особенности:</legend>
+            <input type="checkbox" id="checkbox-slider" name="ch-box-slider" checked>
+            <label for="checkbox-slider">Слайдер</label>
+            <input type="checkbox" id="checkbox-features" name="ch-box-features">
+            <label for="checkbox-features">Блок преимуществ</label>
+            <input type="checkbox" id="checkbox-news" name="ch-box-news" checked>
+            <label for="checkbox-news">Новости</label>
+            <input type="checkbox" id="checkbox-basket" name="ch-box-basket">
+            <label for="checkbox-basket">Корзина</label>
+          </fieldset>
           <button class="show" type="button">Показать</button>
         </form>
       </section>
