@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-navigation" aria-lebel="Содержимое">
+      <nav class="main-navigation" aria-label="Содержимое">
         <a class="main-header-logo" href="index.html"> 
           <img src="img/nerds-logo.svg" width="140" height="49" alt="Ссылка на главную страницу Нёрдс">
         </a>
         <ul class="site-navigation">
           <li><a href="index.html#studio">Студия</a></li>
           <li><a href="index.html#clients">Клиенты</a></li>
-          <li><a class="site-navigation-current" href="catalog.html">Магазин</a></li>
+          <li><a class="site-navigation-current">Магазин</a></li>
           <li><a href="#contacts">Контакты</a></li>
         </ul>
         <ul class="basket">
@@ -27,42 +27,39 @@
         <h2 class="subtitle">Магазин готовых шаблонов</h2>
       </div>
       
-       <section class="filters">
+      <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+        <div class="filter-for-cost" aria-label="Стоимость">
+          <h3>Стоимость:</h3>
+          <div class="cost-slider">
+            <span>Ползунок</span>
+          </div>
+          <label for="from">От</label>
+          <input type="text" id="from" name="filter-from" value="0">
+          <label for="to">до</label>
+          <input type="text" id="to" name="filter-to" value="15000">
+        </div>
         <form class="filters-item" action="echo.htmlacademy.ry" method="get">
-          <div class="filter-for-cost">
-             <fieldset>
-                <legend>Стоимость:</legend>
-                <label for="cost"></label><br>
-                <input type="range" min="1" max="15000" step="1" id="cost" name="filter-cost"><br>
-                <label for="from">От</label>
-                <input type="text" id="from" name="filter-from" value="0">
-                <label for="to">до</label>
-                <input type="text" id="to" name="filter-to" value="15000">
-            </fieldset>
-          </div>
-          <div class="form-for-grid">
-            <fieldset>
-              <legend>Сетка:</legend>
-                <input type="radio" id="adapt" name="filter-grid"  checked>
-                <label for="adapt">Адаптивная</label>
-                <input type="radio" id="fixed" name="filter-grid">
-                <label for="fixed">Фиксированная</label>
-                <input type="radio" id="rubber" name="filter-grid">
-                <label for="rubber">Резиновая</label>
-            </fieldset>
-          </div>
+          <fieldset class="form-for-grid">
+            <legend>Сетка:</legend>
+            <input type="radio" id="adapt" name="filter-grid"  checked>
+            <label for="adapt">Адаптивная</label>
+            <input type="radio" id="fixed" name="filter-grid">
+            <label for="fixed">Фиксированная</label>
+            <input type="radio" id="rubber" name="filter-grid">
+            <label for="rubber">Резиновая</label>
+          </fieldset>
           <div class="form-for-features">
             <fieldset>
-             <legend>Особенности:</legend>
-                <input type="checkbox" id="checkbox-slider" name="ch-box-slider" checked>
-                <label for="checkbox-slider">Слайдер</label>
-                <input type="checkbox" id="checkbox-features" name="ch-box-features">
-                <label for="checkbox-features">Блок преимуществ</label>
-                <input type="checkbox" id="checkbox-news" name="ch-box-news" checked>
-                <label for="checkbox-news">Новости</label>
-                <input type="checkbox" id="checkbox-basket" name="ch-box-basket">
-                <label for="checkbox-basket">Корзина</label>
+              <legend>Особенности:</legend>
+              <input type="checkbox" id="checkbox-slider" name="ch-box-slider" checked>
+              <label for="checkbox-slider">Слайдер</label>
+              <input type="checkbox" id="checkbox-features" name="ch-box-features">
+              <label for="checkbox-features">Блок преимуществ</label>
+              <input type="checkbox" id="checkbox-news" name="ch-box-news" checked>
+              <label for="checkbox-news">Новости</label>
+              <input type="checkbox" id="checkbox-basket" name="ch-box-basket">
+              <label for="checkbox-basket">Корзина</label>
             </fieldset>
           </div>
           <button class="show" type="button">Показать</button>
@@ -140,7 +137,7 @@
       </section>
       
     </main>
-       <footer class="page-footer">
+    <footer class="page-footer">
      
       <section class="our-contacts">
         <h2 class="visually-hidden" id="contacts">Контактная информация</h2>
@@ -169,9 +166,24 @@
       </div> 
     </footer>
     
-     <section class="modal-contacts">
+    <section class="modal-contacts" tabindex="-1">
       <h2>Напишите нам</h2>
-      <span class="modal-close">x</span>
+      <form class="modal-write-us" action="echo.htmlacademy.ru" method="get">
+        <p>
+          <label for="user-name">Ваше имя:</label><br>
+          <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label><br>
+          <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">
+        </p>
+        <p>
+        <label for="text-letter">Текст письма:</label><br>
+        <textarea name="letter" id="text-letter" cols="70" rows="3">В свободной форме</textarea>
+        </p>
+        <button class="btn-send" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" area-label="Закрыть модальное окно Напишите нам">x</button>
     </section>
   </body>
 </html>
