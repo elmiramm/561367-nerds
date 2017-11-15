@@ -33,8 +33,8 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters-item" action="echo.htmlacademy.ry" method="get">
-          <fieldset class="filter-for-cost">
-            <legend>Стоимость:</legend>
+          <fieldset class="filter-for-cost filter">
+            <legend class="filter-name">Стоимость:</legend>
             <div class="cost-slider">
               <span>Ползунок</span>
             </div>
@@ -43,8 +43,8 @@
             <label for="to">до</label>
             <input type="text" id="to" name="filter-to" value="15000">
           </fieldset>
-          <fieldset class="form-for-grid">
-            <legend>Сетка:</legend>
+          <fieldset class="form-for-grid filter">
+            <legend class="filter-name">Сетка:</legend>
             <input type="radio" id="adapt" name="filter-grid"  checked>
             <label for="adapt">Адаптивная</label>
             <input type="radio" id="fixed" name="filter-grid">
@@ -52,8 +52,8 @@
             <input type="radio" id="rubber" name="filter-grid">
             <label for="rubber">Резиновая</label>
           </fieldset>
-          <fieldset class="form-for-features">
-            <legend>Особенности:</legend>
+          <fieldset class="form-for-features filter">
+            <legend class="filter-name">Особенности:</legend>
             <input type="checkbox" id="checkbox-slider" name="ch-box-slider" checked>
             <label for="checkbox-slider">Слайдер</label>
             <input type="checkbox" id="checkbox-features" name="ch-box-features">
