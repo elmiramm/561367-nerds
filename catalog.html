@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -68,9 +71,9 @@
         <h2 class="visually-hidden">Список макетов</h2>
         <h3>Сортировать:</h3>
         <ul class="sorting">
-          <li class="sorting-item active">По цене</li>
-          <li class="sorting-item">По типу</li>
-          <li class="sorting-item">По названию</li>
+          <li class="sorting-item active"><button type="button">По цене</button></li>
+          <li class="sorting-item"><button type="button">По типу</button></li>
+          <li class="sorting-item"><button type="button">По названию</button></li>
         </ul>
         <ul class="up-down">
           <li><button class="btn-arrow active" type="button">&#9660;</button></li>
@@ -154,7 +157,7 @@
       </section>
       
       <div class="footer-social">
-        <ul>
+        <ul class="social">
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
@@ -167,15 +170,15 @@
     <section class="modal-contacts" tabindex="-1">
       <h2>Напишите нам</h2>
       <form class="modal-write-us" action="echo.htmlacademy.ru" method="get">
-        <p>
+        <p class="write">
           <label for="user-name">Ваше имя:</label><br>
           <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
         </p>
-        <p>
+        <p class="write">
           <label for="user-email">Ваш e-mail:</label><br>
           <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">
         </p>
-        <p>
+        <p class="write">
         <label for="text-letter">Текст письма:</label><br>
         <textarea name="letter" id="text-letter" cols="70" rows="3">В свободной форме</textarea>
         </p>

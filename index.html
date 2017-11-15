@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -40,7 +43,7 @@
        <!-- Конец переключателей -->
         <div class="slides">
        <!-- Начало первого слайда -->
-          <div class="slide">
+          <div class="slide slide-1">
             <div class="slide-text">
               <h2 class="slide-title">Долго, дорого,<br>скрупулезно.</h2>
               <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
@@ -49,7 +52,7 @@
           </div>
        <!-- Конец первого слайда -->
        <!-- Начало второго слайда -->
-          <div class="slide">
+          <div class="slide slide-2">
             <div class="slide-text">
               <h2 class="slide-title">Любим математику<br>как никто другой.</h2>
               <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
@@ -58,7 +61,7 @@
           </div>
        <!-- Конец второго слайда -->
        <!-- Начало третьего слайда -->
-          <div class="slide">
+          <div class="slide slide-3">
             <div class="slide-text">
               <h2 class="slide-title">Только ночь,<br>только хардкор</h2>
               <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
@@ -130,22 +133,22 @@
       <section class="our-clients">
         <h2 class="visually-hidden" id="clients">Наши клиенты</h2>
         <ul class="client-list">
-          <li>
+          <li class="client-list-item">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-1.png" width="199" height="68" alt="Ссылка на сайт Html academy">
             </a>
           </li>
-          <li>
+          <li class="client-list-item">
             <a href="#">
               <img src="img/logo-2.png" width="209" height="87" alt="Ссылка на сайт Barbershop">
             </a>
           </li>
-          <li>
+          <li class="client-list-item">
             <a href="#">
               <img src="img/logo-3.png" width="185" height="52" alt="Ссылка на сайт Pink">
             </a>
           </li>
-          <li>
+          <li class="client-list-item">
             <a href="#">
               <img src="img/logo-4.png" width="173" height="84" alt="Ссылка на сайт Mishka">
             </a>
@@ -172,7 +175,7 @@
       </section>
       
       <div class="footer-social">
-        <ul>
+        <ul class="social">
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
@@ -185,15 +188,15 @@
     <section class="modal-contacts" tabindex="-1">
       <h2>Напишите нам</h2>
       <form class="modal-write-us" action="echo.htmlacademy.ru" method="get">
-        <p>
+        <p class="write">
           <label for="user-name">Ваше имя:</label><br>
           <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
         </p>
-        <p>
+        <p class="write">
           <label for="user-email">Ваш e-mail:</label><br>
           <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">
         </p>
-        <p>
+        <p class="write">
         <label for="text-letter">Текст письма:</label><br>
         <textarea name="letter" id="text-letter" cols="70" rows="3">В свободной форме</textarea>
         </p>
