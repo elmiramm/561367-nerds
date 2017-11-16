@@ -321,19 +321,53 @@ a {
   color: #000000;
 }
 
-.btn-arrow {
+.down {
+  background-image: url("../img/icon-down-dir.svg");
   background-color: #ffffff;
   border: none;
-  color: rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  color: #000000;
+  opacity: 0.2; 
 }
 
-.btn-arrow:hover,
-.btn-arrow:focus {
+.up {
+  background-image: url("../img/icon-up-dir.svg");
+  background-color: #ffffff;
+  border: none;
+  background-repeat: no-repeat;
+  color: #000000;
+  opacity: 0.2; 
+}
+
+.down:hover,
+.down:focus
+{
+  background-image: url("../img/icon-down-dir.svg");
   color: #a6a6a6;
 }
 
-.btn-arrow:active {
-  color: #231f20;
+.up:hover,
+.up:focus {
+  background-image: url("../img/icon-up-dir.svg");
+  color: #a6a6a6;
+}
+
+.down:active {
+  background-image: url("../img/icon-down-dir.svg");
+  color: #000000;
+  opacity: 1;
+}
+
+.up:focus {
+  background-image: url("../img/icon-up-dir.svg");
+  color: #000000;
+  opacity: 0.2; 
+}
+
+.up:active {
+  background-image: url("../img/icon-up-dir.svg");
+  color: #000000;
+  opacity: 1;
 }
 
 .btn-product-card {
@@ -475,7 +509,7 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-close {
-  background-image: url(../img/close-cross.svg);
+  background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
   color: #fb565a;
   border: none;
@@ -489,6 +523,6 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-close:active {
-  background-image: url(../img/close-cross.svg);
+  background-image: url("../img/close-cross.svg");
   opacity: 0.1;
 }
