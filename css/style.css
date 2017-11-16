@@ -321,52 +321,32 @@ a {
   color: #000000;
 }
 
-.down {
-  background-image: url("../img/icon-down-dir.svg");
+.btn-arrow {
   background-color: #ffffff;
   border: none;
   background-repeat: no-repeat;
   color: #000000;
-  opacity: 0.2; 
+  opacity: 0.2;
+  font-size: 0;
+  width: 11px;
+  height: 10px;
+}
+
+.down {
+  background-image: url("../img/icon-down-dir.svg");
 }
 
 .up {
   background-image: url("../img/icon-up-dir.svg");
-  background-color: #ffffff;
-  border: none;
-  background-repeat: no-repeat;
-  color: #000000;
-  opacity: 0.2; 
 }
 
-.down:hover,
-.down:focus
-{
-  background-image: url("../img/icon-down-dir.svg");
-  color: #a6a6a6;
+.btn-arrow:hover,
+.btn-arrow:focus {
+  opacity: 0.6;
 }
 
-.up:hover,
-.up:focus {
-  background-image: url("../img/icon-up-dir.svg");
-  color: #a6a6a6;
-}
-
-.down:active {
-  background-image: url("../img/icon-down-dir.svg");
-  color: #000000;
-  opacity: 1;
-}
-
-.up:focus {
-  background-image: url("../img/icon-up-dir.svg");
-  color: #000000;
-  opacity: 0.2; 
-}
-
-.up:active {
-  background-image: url("../img/icon-up-dir.svg");
-  color: #000000;
+.btn-arrow:active,
+.btn-arrow:active {
   opacity: 1;
 }
 
@@ -514,15 +494,16 @@ color: rgba(255, 255, 255, 0.3);
   color: #fb565a;
   border: none;
   opacity: 0.3;
+  font-size: 0px;
+  width: 21px;
+  height: 21px;
 }
 
 .modal-close:hover,
 .modal-close:focus {
-  color: #fb565a;
   opacity: 1;
 }
 
 .modal-close:active {
-  background-image: url("../img/close-cross.svg");
   opacity: 0.1;
 }
