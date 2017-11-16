@@ -39,9 +39,9 @@
               <span>Ползунок</span>
             </div>
             <label for="from">От</label>
-            <input type="text" id="from" name="filter-from" value="0">
+            <input class="cost-from-to" type="text" id="from" name="filter-from" value="0">
             <label for="to">до</label>
-            <input type="text" id="to" name="filter-to" value="15000">
+            <input class="cost-from-to" type="text" id="to" name="filter-to" value="15000">
           </fieldset>
           <fieldset class="form-for-grid filter">
             <legend class="filter-name">Сетка:</legend>
@@ -76,8 +76,8 @@
           <li class="sorting-item"><button type="button">По названию</button></li>
         </ul>
         <ul class="up-down">
-          <li><button class="btn-arrow active" type="button">&#9660;</button></li>
-          <li><button class="btn-arrow" type="button">&#9650;</button></li>
+          <li><span class="arrow active">&#9660;</span></li>
+          <li><span class="arrow">&#9650;</span></li>
         </ul>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -129,12 +129,12 @@
             </div>
           </li>
         </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
-        </ul>
+        <div class="pagination-list">
+          <a class="pagination-item current">1</a>
+          <a class="pagination-item" href="#">2</a>
+          <a class="pagination-item" href="#">3</a>
+          <a class="pagination-item" href="#">Следующая</a>
+        </div>
       </section>
       
     </main>

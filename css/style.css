@@ -5,6 +5,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
+  text-align: left;
   color: #283136;
   
   background-color: #ffffff;
@@ -18,8 +19,6 @@ a {
 
 .main-navigation {
   text-transform: uppercase;
-  line-height: 30px;
-  color: #000000;
   
   background-color: #eeeeee;
 }
@@ -58,6 +57,7 @@ a {
 .site-navigation a:active,
 .basket a:active {
   color: #000000; 
+  opacity:0.3;
 }
 
 .site-navigation-current {
@@ -71,7 +71,7 @@ a {
   color: #000000;
   font-size: 55px;
   line-height: 55px;
-  text-align: left;
+  font-weight: medium;
 }
 
 .slide-text p {
@@ -90,10 +90,13 @@ a {
 
 .btn:active {
   background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+.slides {
+  background-color: #eeeeee;
 }
 
 .slide {
-  background-color: #eeeeee;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -148,6 +151,7 @@ a {
 
 .button-1:active {
   background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-2 {
@@ -161,6 +165,7 @@ a {
 
 .button-2:active {
   background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-3 {
@@ -174,6 +179,7 @@ a {
 
 .button-3:active {
   background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* про компанию */
@@ -183,6 +189,7 @@ a {
   font-size: 45px;
   line-height: 45px;
   text-align: left;
+  font-weight: medium;
 }
 
 .about-left-part p {
@@ -212,6 +219,7 @@ a {
 .stat-mean {
   font-size: 45px;
   font-weight: bold;
+  color: #000000;
 }
 
 .stat-header {
@@ -245,6 +253,7 @@ a {
   color: #000000;
   text-align: center;
   background-color: #eeeeee;
+  font-weight: medium;
 }
 
 /* 2 стр фильтры*/
@@ -261,7 +270,7 @@ a {
 }
 
 .cost-slider, 
-.filter-for-cost input[type="text"] {
+.filter-for-cost .cost-from-to {
   background-color: #eeeeee;
 }
 
@@ -277,6 +286,7 @@ a {
 
 .show:active {
   background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /*каталог*/
@@ -299,12 +309,12 @@ a {
   border: none;
   text-transform: uppercase;
   font-size: 14px;
-  color: #b2b2b2;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-item button:hover,
 .sorting-item button:focus {
-  color: #666666;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .sorting-item button:active {
@@ -312,18 +322,18 @@ a {
 }
 
 
-.btn-arrow {
+.arrow {
   background-color: #ffffff;
   border: none;
-  color: #ededed;
+  color: rgba(0, 0, 0, 0.2);
 }
 
-.btn-arrow:hover,
-.btn-arrow:focus {
+.arrow:hover,
+.arrow:focus {
   color: #a6a6a6;
 }
 
-.btn-arrow:active {
+.arrow:active {
   color: #231f20;
 }
 
@@ -359,17 +369,17 @@ background-color: #d7373b;
 
 /* пагинатор */
 
-.pagination-item a {
+.pagination-item {
   background-color: #eeeeee;
   color: #000000;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item:hover,
+.pagination-item:focus {
   background-color: #dfdfdf;
 }
 
-.pagination-item a:active {
+.pagination-item:active {
   background-color: #d5d5d5;
 }
 
@@ -391,13 +401,22 @@ background-color: #d7373b;
 .write-us p {
   line-height: 18px;
   text-align: left;
-  text-transform: none;
 }
 
 .btn-write-us {
   background-color: #fb565a;
   text-align: center;
   color: #ffffff;
+}
+
+.btn-write-us:hover,
+.btn-write-us:focus {
+  background-color: #e74246;
+}
+
+.btn-write-us:active {
+background-color: #d7373b;
+color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-social {
@@ -412,7 +431,6 @@ background-color: #d7373b;
 .footer-social b {
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
   color: #000000;
 }
 
@@ -433,10 +451,7 @@ background-color: #d7373b;
   color: #000000;
 }
 
-.write input {
-  border: 2px solid #d7dcde;
-}
-
+.write input,
 .write textarea {
   border: 2px solid #d7dcde;
   color: #a1a1a1;
@@ -450,6 +465,7 @@ background-color: #d7373b;
 .write input:focus,
 .write textarea:focus {
   border: 2px solid #000000;
+  outline: none;
 }
 
 .write input:invalid,
