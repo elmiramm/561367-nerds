@@ -18,8 +18,7 @@ a {
 /*к навигации и логотипу*/
 
 .main-navigation {
-  text-transform: uppercase;
-  
+  text-transform: uppercase; 
   background-color: #eeeeee;
 }
 
@@ -71,7 +70,7 @@ a {
   color: #000000;
   font-size: 55px;
   line-height: 55px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .slide-text p {
@@ -92,6 +91,7 @@ a {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
+
 .slides {
   background-color: #eeeeee;
 }
@@ -189,7 +189,7 @@ a {
   font-size: 45px;
   line-height: 45px;
   text-align: left;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .about-left-part p {
@@ -253,7 +253,7 @@ a {
   color: #000000;
   text-align: center;
   background-color: #eeeeee;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 /* 2 стр фильтры*/
@@ -321,23 +321,22 @@ a {
   color: #000000;
 }
 
-
-.arrow {
+.btn-arrow {
   background-color: #ffffff;
   border: none;
   color: rgba(0, 0, 0, 0.2);
 }
 
-.arrow:hover,
-.arrow:focus {
+.btn-arrow:hover,
+.btn-arrow:focus {
   color: #a6a6a6;
 }
 
-.arrow:active {
+.btn-arrow:active {
   color: #231f20;
 }
 
-.product-card {
+.btn-product-card {
   text-align: center;
   background-color: #eeeeee;
 }
@@ -383,7 +382,7 @@ background-color: #d7373b;
   background-color: #d5d5d5;
 }
 
-.pagination-item .current {
+.pagination-item.current {
   background-color: #ffffff;
   border: 2px solid #dbdbdb;
 }
@@ -417,10 +416,6 @@ background-color: #d7373b;
 .btn-write-us:active {
 background-color: #d7373b;
 color: rgba(255, 255, 255, 0.3);
-}
-
-.footer-social {
-  text-align: center;
 }
 
 .social {
@@ -480,28 +475,20 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-close {
-  background-color: #ffffff;
-  color: #fecccd;
+  background-image: url(../img/close-cross.svg);
+  background-repeat: no-repeat;
+  color: #fb565a;
   border: none;
+  opacity: 0.3;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #fb565a;
+  opacity: 1;
 }
 
 .modal-close:active {
-  color: #fb565a;
+  background-image: url(../img/close-cross.svg);
+  opacity: 0.1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
