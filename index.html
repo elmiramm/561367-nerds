@@ -13,17 +13,19 @@
         <a class="main-header-logo"> 
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
         </a>
-        <ul class="site-navigation">
-          <li><a href="#studio">Студия</a></li>
-          <li><a href="#clients">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-        <ul class="basket">
-          <li class="basket-link">
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
+        <div class="wrapper-site-nav-and-basket">
+          <ul class="site-navigation">
+            <li><a href="#studio">Студия</a></li>
+            <li><a href="#clients">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+          <ul class="basket">
+            <li class="basket-link">
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="container">
@@ -32,9 +34,9 @@
       
       <div class="slider">
        <!-- Начало переключателей -->
-        <input type="radio" name="point" id="point-slide-1" checked>
-        <input type="radio" name="point" id="point-slide-2">
-        <input type="radio" name="point" id="point-slide-3">
+        <input type="radio" name="point" id="point-slide-1" checked class="visually-hidden">
+        <input type="radio" name="point" id="point-slide-2" class="visually-hidden">
+        <input type="radio" name="point" id="point-slide-3" class="visually-hidden">
         <div class="points">
           <label for="points-slide-1"></label>
           <label for="points-slide-2"></label>
@@ -52,7 +54,7 @@
           </div>
        <!-- Конец первого слайда -->
        <!-- Начало второго слайда -->
-          <div class="slide slide-2">
+          <div class="slide slide-2 visually-hidden">
             <div class="slide-text">
               <h2 class="slide-title">Любим математику<br>как никто другой.</h2>
               <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
@@ -61,7 +63,7 @@
           </div>
        <!-- Конец второго слайда -->
        <!-- Начало третьего слайда -->
-          <div class="slide slide-3">
+          <div class="slide slide-3 visually-hidden">
             <div class="slide-text">
               <h2 class="slide-title">Только ночь,<br>только хардкор</h2>
               <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
@@ -112,7 +114,7 @@
         <div class="about-right-part">
           <h2 class="visually-hidden">Статистика по Нёрдс</h2>
           <a class="logo-in-about"> 
-              <img src="img/nerds-illustration.png" width="360" height="280" alt="Логотип Нёрдс в секции О нас">
+              <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип Нёрдс в секции О нас">
           </a>
           <h3>С 2004 года любим точность во всем:</h3>
           <table class="statistics">

@@ -17,9 +17,25 @@ a {
 
 /*к навигации и логотипу*/
 
-.main-navigation {
-  text-transform: uppercase; 
+.page-header {
   background-color: #eeeeee;
+}
+
+.main-navigation {
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex; 
+  width: 1160px;
+  justify-content: space-between;
+  margin:auto;
+  padding-top: 49px;
+  padding-bottom: 28px;
+}
+
+.wrapper-site-nav-and-basket {
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
 }
 
 .main-header-logo {
@@ -33,6 +49,13 @@ a {
 
 .main-header-logo:active {
   opacity: 0.3;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  padding: 0px;
 }
 
 .site-navigation,
@@ -71,6 +94,7 @@ a {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin: 0px;
 }
 
 .slide-text p {
@@ -80,6 +104,7 @@ a {
 .btn {
   color: #ffffff;
   background-color: #fb565a;
+  align-self: center;
 }
 
 .btn:hover,
@@ -97,8 +122,16 @@ a {
 }
 
 .slide {
+  display: flex;
+  width: 1160px;
+  justify-content: flex-start;
   background-repeat: no-repeat;
+  background-size: auto;
   background-position: right;
+  min-height: 413px;
+  margin:auto;
+  margin-top: 0px;
+  margin-bottom: 85px;
 }
 
 .slide-1 {
@@ -113,14 +146,34 @@ a {
   background-image: url("../img/slide3.png");
 }
 
+.slide-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+/*то, что надо скрыть + пока скрыла кнопки для слайдеров и слайды 2 и 3*/
+
+.visually-hidden {
+  display: none;
+}
 /* к услугам */
 
 .services-list {
   list-style: none;
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+  padding: 0px;
+  margin: auto;
+  margin-top: 0px;
+  padding-bottom: 85px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .services-item {
   text-align:left;
+  width: 300px;
 }
 
 .services-item h3 {
@@ -184,6 +237,19 @@ a {
 
 /* про компанию */
 
+.about {
+  display: flex;
+  width: 1160px;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.about-left-part {
+width: 660px;
+  padding-bottom: 75px;
+}
+
 .about-left-part h2 {
   color: #000000;
   font-size: 45px;
@@ -208,8 +274,13 @@ a {
   text-align: left;
 }
 
+.about-right-part {
+  width: 360px;
+}
+
 .about-right-part h3 {
   text-transform: uppercase;
+  font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #000000;
@@ -224,12 +295,28 @@ a {
 
 .stat-header {
   text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
 }
 
 /* наши клиенты */
 
 .client-list {
+  display: flex;
+  width: 1086px;
   list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 80px;
+  padding-left: 31px;
+  padding-right: 43px;
+  padding-top: 47px;
+  padding-bottom: 48px;
+  border-bottom: 2px solid #eeeeee; 
+  border-top:  2px solid #eeeeee;
 }
 
 .client-list-item a {
@@ -322,7 +409,7 @@ a {
 }
 
 .btn-arrow {
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
   background-repeat: no-repeat;
   color: #000000;
@@ -342,7 +429,7 @@ a {
 
 .btn-arrow:hover,
 .btn-arrow:focus {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .btn-arrow:active,
@@ -402,6 +489,12 @@ background-color: #d7373b;
 }
 
 /* контакты */
+
+
+.our-contacts {
+  width: 1440px;
+  margin: auto;
+}
 
 .write-us h3 {
   text-transform: uppercase;
@@ -491,6 +584,7 @@ color: rgba(255, 255, 255, 0.3);
 .modal-close {
   background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
+  background-color: transparent;
   color: #fb565a;
   border: none;
   opacity: 0.3;
