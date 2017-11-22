@@ -27,9 +27,11 @@ a {
   display: flex; 
   width: 1160px;
   justify-content: space-between;
+  align-items: center;
   margin:auto;
+  margin-top: 0px;
   padding-top: 49px;
-  padding-bottom: 28px;
+  padding-bottom: 18px;
 }
 
 .wrapper-site-nav-and-basket {
@@ -88,6 +90,9 @@ a {
 }
 
 /* к слайдеру*/
+.slide {
+  min-height: 430px;
+}
 
 .slide-title {
   color: #000000;
@@ -243,6 +248,7 @@ a {
   margin: auto;
   justify-content: space-between;
   padding-top: 40px;
+  min-height: 528px;
 }
 
 .about-left-part {
@@ -341,9 +347,25 @@ width: 660px;
   text-align: center;
   background-color: #eeeeee;
   font-weight: 500;
+  margin-top: 0px;
+  padding-top: 60px;
+  padding-bottom: 116px; 
+}
+
+.filter-catalog {
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 0px;
 }
 
 /* 2 стр фильтры*/
+
+.filters {
+  display: flex;
+  width: 320px;
+}
 
 .filter-name {
   text-transform: uppercase;
@@ -354,6 +376,11 @@ width: 660px;
 
 .filter {
   border: none;
+}
+
+.filters-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .cost-slider, 
@@ -378,11 +405,19 @@ width: 660px;
 
 /*каталог*/
 
+.catalog {
+  display: flex;
+  width: 760px;
+  flex-direction: column;
+  margin: auto;
+}
+
 .catalog h3 {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
+  align-self: flex-start;
 }
 
 .sorting-item,
@@ -391,11 +426,31 @@ width: 660px;
 .pagination-list {
   list-style: none;
 }
+
+.catalog-sorting-line {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;  
+  margin-left: 40px; 
+}
+
+.sorting-up-down {
+  display: flex;
+  width: 360px;
+}
+
+.sorting, 
+up-down {
+  display: flex;
+  width: 280px;
+}
+
 .sorting-item button {
   background-color: #ffffff;
   border: none;
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -437,6 +492,26 @@ width: 660px;
   opacity: 1;
 }
 
+.catalog-list {
+  display: flex;
+  width: 760px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  position: relative;
+}
+
+.product-card {
+  position: absolute;
+  bottom: 0px;
+  min-height: 231px;
+  background-color: #eeeeee;
+  width: 360px;
+  text-align: center;
+}
+
 .btn-product-card {
   text-align: center;
   background-color: #eeeeee;
@@ -469,7 +544,16 @@ background-color: #d7373b;
 
 /* пагинатор */
 
+.pagination-list {
+  display: flex;
+  width: 460px;
+  padding: 0px;
+  margin-left: 40px; 
+  
+}
+
 .pagination-item {
+  margin-right: 10px;
   background-color: #eeeeee;
   color: #000000;
 }
@@ -494,6 +578,23 @@ background-color: #d7373b;
 .our-contacts {
   width: 1440px;
   margin: auto;
+}
+
+.for-map {
+  position: relative;
+}
+
+.write-us {
+  position: absolute;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 55px;
+  left: 140px;
+  width: 319px;
+  min-height: 308px;
 }
 
 .write-us h3 {
@@ -525,9 +626,28 @@ background-color: #d7373b;
 color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-social {
+  display: flex;
+  width: 1160px;
+  margin: auto;
+  padding-top: 70px;
+}
+
 .social {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
   list-style: none;
   text-align: left;
+  margin-right: 140px;
+  padding: 0px; 
+}
+
+.social-wrapper {
+  display: flex;
+  width: 560px;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .footer-social b {
@@ -542,16 +662,49 @@ color: rgba(255, 255, 255, 0.3);
 
 /*поп-ап*/
 
+.modal-contacts {
+  width: 960px; 
+}
+
 .modal-contacts h2 {
   font-size: 45px;
   line-height: 45px;
   color: #000000;
 }
 
+.modal-first-line {
+  display: flex;
+  width: 780px;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.modal-second-line {
+  display: flex;
+  width: 780px;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
 .modal-write-us label {
   font-weight: bold;
   color: #000000;
 }
+
+.write input {
+  width: 360px;
+}
+
+.write textarea {
+  width: 760px;
+  margin-left: 100px;
+}
+
+.for-textaria {
+  margin-left: 100px;
+} 
 
 .write input,
 .write textarea {
@@ -579,6 +732,7 @@ color: rgba(255, 255, 255, 0.3);
 .btn-send {
   background-color: #fb565a;
   color: #ffffff;
+  margin-left: 100px;
 }
 
 .modal-close {

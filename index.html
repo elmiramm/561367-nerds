@@ -162,17 +162,19 @@
      
       <section class="our-contacts">
         <h2 class="visually-hidden" id="contacts">Контактная информация</h2>
-        <img src="img/map.png" width="1440" height="416" alt="Расположение Nёrds на карте по адресу Санкт-Петербург ул. Б. Конюшенная, д. 19/8">
-        <div class="write-us">
-          <h3>Nёrds design studio</h3>
-          <p>
+        <div class="for-map">
+          <img src="img/map.png" width="1440" height="416" alt="Расположение Nёrds на карте по адресу Санкт-Петербург ул. Б. Конюшенная, д. 19/8">
+          <div class="write-us">
+            <h3>Nёrds design studio</h3>
+            <p>
             191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8<br>
-          </p>
-          <p>
+            </p>
+            <p>
             Телефон: +7(812) 275-75-75
-          </p>
-          <button class="btn-write-us" type="button">Напишите нам</button>
+            </p>
+            <button class="btn-write-us" type="button">Напишите нам</button>
+          </div>
         </div>
       </section>
       
@@ -182,29 +184,35 @@
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="social-wrapper">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div> 
     </footer>
     
     <section class="modal-contacts" tabindex="-1">
-      <h2>Напишите нам</h2>
+      <div class="modal-first-line">
+        <h2>Напишите нам</h2>
+        <button class="modal-close" type="button">Закрыть</button>
+      </div>
       <form class="modal-write-us" action="echo.htmlacademy.ru" method="get">
+       <div class="modal-second-line">
+          <p class="write">
+            <label for="user-name">Ваше имя:</label><br>
+            <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p class="write">
+            <label for="user-email">Ваш e-mail:</label><br>
+            <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">
+          </p>
+        </div>
         <p class="write">
-          <label for="user-name">Ваше имя:</label><br>
-          <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
-        </p>
-        <p class="write">
-          <label for="user-email">Ваш e-mail:</label><br>
-          <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">
-        </p>
-        <p class="write">
-        <label for="text-letter">Текст письма:</label><br>
-        <textarea name="letter" id="text-letter" cols="70" rows="3">В свободной форме</textarea>
+          <label for="text-letter" class="for-textaria">Текст письма:</label><br>
+          <textarea name="letter" id="text-letter" cols="70" rows="3">В свободной форме</textarea>
         </p>
         <button class="btn-send" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
