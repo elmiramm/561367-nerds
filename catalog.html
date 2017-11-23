@@ -89,8 +89,7 @@
         <section class="catalog">
           <h2 class="visually-hidden">Список макетов</h2>
           <div class="catalog-sorting-line">  
-            <h3>Сортировать:</h3>
-            <div class="sorting-up-down">  
+            <h3>Сортировать:</h3> 
               <ul class="sorting">
                 <li class="sorting-item active"><button type="button">По цене</button></li>
                 <li class="sorting-item"><button type="button">По типу</button></li>
@@ -100,7 +99,6 @@
                 <li><button class="btn-arrow down active" type="button">Стрелка вниз</button></li>
                 <li><button class="btn-arrow up" type="button">Стрелка вверх</button></li>
               </ul>
-            </div>
           </div>
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -195,25 +193,21 @@
     </footer>
     
     <section class="modal-contacts" tabindex="-1">
-      <div class="modal-first-line">
         <h2>Напишите нам</h2>
         <button class="modal-close" type="button">Закрыть</button>
-      </div>
       <form class="modal-write-us" action="echo.htmlacademy.ru" method="get">
-       <div class="modal-second-line">
-          <p class="write">
+          <p class="write write-half">
             <label for="user-name">Ваше имя:</label><br>
             <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
           </p>
-          <p class="write">
+          <p class="write write-half">
             <label for="user-email">Ваш e-mail:</label><br>
             <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">
           </p>
-        </div>
-        <p class="write">
+          <p class="write write-full">
           <label for="text-letter" class="for-textaria">Текст письма:</label><br>
           <textarea name="letter" id="text-letter" cols="70" rows="3">В свободной форме</textarea>
-        </p>
+          </p>
         <button class="btn-send" type="submit">Отправить</button>
       </form>
     </section>

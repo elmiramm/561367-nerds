@@ -10,22 +10,20 @@
   <body>
     <header class="page-header">
       <nav class="main-navigation" aria-label="Содержимое">
-        <a class="main-header-logo"> 
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
-        </a>
-        <div class="wrapper-site-nav-and-basket">
-          <ul class="site-navigation">
-            <li><a href="#studio">Студия</a></li>
-            <li><a href="#clients">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-          </ul>
-          <ul class="basket">
-            <li class="basket-link">
-              <a href="#">Корзина</a>
-            </li>
-          </ul>
-        </div>
+      <a class="main-header-logo"> 
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+      </a>
+        <ul class="site-navigation">
+          <li><a href="#studio">Студия</a></li>
+          <li><a href="#clients">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <ul class="basket">
+          <li class="basket-link">
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="container">
@@ -113,7 +111,7 @@
         </div>
         <div class="about-right-part">
           <h2 class="visually-hidden">Статистика по Нёрдс</h2>
-          <a class="logo-in-about"> 
+          <a class="logo-in-about" href="#"> 
               <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип Нёрдс в секции О нас">
           </a>
           <h3>С 2004 года любим точность во всем:</h3>
@@ -192,25 +190,21 @@
     </footer>
     
     <section class="modal-contacts" tabindex="-1">
-      <div class="modal-first-line">
         <h2>Напишите нам</h2>
         <button class="modal-close" type="button">Закрыть</button>
-      </div>
       <form class="modal-write-us" action="echo.htmlacademy.ru" method="get">
-       <div class="modal-second-line">
-          <p class="write">
+          <p class="write write-half">
             <label for="user-name">Ваше имя:</label><br>
             <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
           </p>
-          <p class="write">
+          <p class="write write-half">
             <label for="user-email">Ваш e-mail:</label><br>
             <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">
           </p>
-        </div>
-        <p class="write">
-          <label for="text-letter" class="for-textaria">Текст письма:</label><br>
-          <textarea name="letter" id="text-letter" cols="70" rows="3">В свободной форме</textarea>
-        </p>
+          <p class="write write-full">
+            <label for="text-letter" class="for-textaria">Текст письма:</label><br>
+            <textarea name="letter" id="text-letter" cols="70" rows="3">В свободной форме</textarea>
+          </p>
         <button class="btn-send" type="submit">Отправить</button>
       </form>
     </section>
