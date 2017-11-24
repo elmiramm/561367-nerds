@@ -165,8 +165,6 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slide3.png");
 }
 
-
-
 /* к услугам */
 
 .services {
@@ -174,6 +172,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services-list {
+  box-sizing: border-box;
   list-style: none;
   display: flex;
   width: 1160px;
