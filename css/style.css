@@ -118,7 +118,6 @@ input[type="radio"].visually-hidden {
   background-position: right;
   min-height: 413px;
   margin:auto;
-  margin-top: 0px;
 }
 
 .slide-title {
@@ -180,6 +179,7 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   justify-content: space-between;
   padding: 0px;
+  padding-right: 60px;
   margin: auto;
   margin-top: 0px;
   padding-bottom: 85px;
@@ -321,8 +321,9 @@ input[type="radio"].visually-hidden {
 
 .our-clients {
   padding-bottom: 80px;
-  width: 1086px;
+  width: 1160px;
   margin: auto;
+  text-align: center;
 }
 
 .client-list {
@@ -340,6 +341,9 @@ input[type="radio"].visually-hidden {
 
 .client-list-item a {
   opacity: 0.2;
+}
+
+.client-list-item {
   width: 25%;
 }
 
@@ -519,6 +523,7 @@ padding-right: 27px;
 
 .product-card {
   position: absolute;
+  width: 360px;
   bottom: 0px;
   min-height: 231px;
   background-color: #eeeeee;
@@ -586,6 +591,7 @@ background-color: #d7373b;
 /* контакты */
 
 .our-contacts {
+  position: relative;
   width: 100%;
   min-width: 1160px;
   max-height: 420px;
@@ -599,21 +605,21 @@ background-color: #d7373b;
 }
 
 .for-map {
-  position: relative;
-  width: 1440px;
+  position: absolute;
+  width: 1160px;
   left: 0px;
+  right: 0px;
+  margin: auto;
   top: 0px;
 }
 
 .write-us {
   position: absolute;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
   top: 55px;
-  left: 140px;
+  left: 0px;
   width: 319px;
   min-height: 308px;
 }
@@ -683,7 +689,6 @@ color: rgba(255, 255, 255, 0.3);
 .footer-social p {
   line-height: 22px;
 }
-
 
 /*поп-ап*/
 
