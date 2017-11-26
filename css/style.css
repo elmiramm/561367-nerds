@@ -15,8 +15,6 @@ a {
   text-decoration: none; 
 }
 
-/*то, что надо скрыть + пока скрыла кнопки для слайдеров и слайды 2 и 3*/
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -99,8 +97,17 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation-current {
-  text-decoration:underline;
-  text-decoration-color: #fb565a;
+  position: relative;
+}
+
+.site-navigation-current::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 2px;
+  background-color: #fb565a;
+  top: 30px;
+  
 }
 
 .basket {
@@ -125,17 +132,16 @@ input[type="radio"].visually-hidden {
 }
 
 /* к слайдеру*/
-
-.slider {
-  position: relative;
-  background-color: #eeeeee;
-}
-
 .slide-container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+  background-color: #eeeeee;
 }
 
 .points {
@@ -148,12 +154,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
-}
-
-.slides {
-  padding: 0px;
-  margin: 0;
-  list-style: none;
 }
 
 .points label {
@@ -178,13 +178,18 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+.slides {
+  padding: 0px;
+  margin: 0;
+  list-style: none;
+}
+
 .slide {
   display: none;
   padding: 78px 0 80px 0;
 }
 
 .slide:nth-child(1) {
-  display: block;
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
@@ -410,6 +415,20 @@ input[type="radio"].visually-hidden {
   text-align: left;
   margin: 0px;
   list-style: none;
+}
+
+.orders-item {
+  position: relative;
+}
+
+.orders-item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  left: -36px;
+  top: 10px;
 }
 
 .about-right-part {
@@ -848,11 +867,41 @@ input[type="radio"].visually-hidden {
   margin-bottom: 35px;
 }
 
-.product-card::after {
+.catalog-item::after {
   content: "";
   position: absolute;
   background-image: url("../img/browser.svg");
   opacity: 0.12;
+  background-position: 0 0; 
+  width: 360px;
+  height: 40px;
+  top: 0px;
+  right: 0px; 
+}  
+
+.catalog-item::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  background-position: 0 0; 
+  width: 360px;
+  height: 40px;
+  top: 0px;
+  right: 0px; 
+}  
+
+.catalog-item img + .product-card {
+  display: none;
+}
+
+.catalog-item img:hover + .product-card {
+  display: block;
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/browser.svg");
   background-position: 0 0; 
   width: 360px;
   height: 40px;
@@ -968,17 +1017,7 @@ background-color: #d7373b;
   min-width: 1160px;
   max-height: 420px;
   margin: auto;
-  overflow: hidden;
-}
-
-.our-contacts::before {
-  content: "";
-  position: absolute;
-  width: 231px;
-  height: 190px;
-  background-image: url("../img/map-marker.png");
-  left: 860px;
-  bottom: 128px;
+  overflow: hidden; 
 }
 
 .our-contacts img {
@@ -1126,7 +1165,8 @@ box-sizing: border-box;
 width: 960px;
 margin: 0 auto;
 padding: 70px 100px 85px 100px;
-border: 1px solid black;
+box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 180px;
 }
 
 .modal-contacts h2 {
@@ -1158,7 +1198,7 @@ width: 100%;
 .write input,
 .write textarea {
   border: 2px solid #d7dcde;
-  color: #a1a1a1;
+  color: rgba (68, 68, 68, 0.5);
   width: 100%;
   padding: 10px;
   border-radius: 3px;
@@ -1168,12 +1208,14 @@ width: 100%;
 .write input:hover,
 .write textarea:hover {
   border: 2px solid #b4b9bb;
+  color: rgba (68, 68, 68, 0.5);
 }
 
 .write input:focus,
 .write textarea:focus {
   border: 2px solid #000000;
   outline: none;
+  color: #444444;
 }
 
 .write input:invalid,
