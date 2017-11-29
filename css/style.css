@@ -47,9 +47,10 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   margin:auto;
-  margin-top: 0px;
-  padding-top: 49px;
-  padding-bottom: 18px;
+  margin-top: 0px; 
+  margin-bottom: 0px;
+  padding-top: 47px;
+  padding-bottom: 10px;
 }
 
 .main-header-logo {
@@ -70,6 +71,8 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 440px;
   padding: 0px;
+  padding-top: 12px;
+  padding-left: 17px;
 }
 
 .site-navigation,
@@ -113,6 +116,8 @@ input[type="radio"].visually-hidden {
 .basket {
   display: flex;
   max-width: 130px;
+  padding-top: 12px;
+  padding-right: 5px;
 }
 
 .basket .basket-link { 
@@ -127,7 +132,7 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/cart-icon.svg);
   background-position: 0 0; 
   position: absolute;
-  right: 95px;
+  right: 100px;
   top: 25%;
 }
 
@@ -182,17 +187,18 @@ input[type="radio"].visually-hidden {
   padding: 0px;
   margin: 0;
   list-style: none;
+  min-height: 413px;
 }
 
 .slide {
   display: none;
-  padding: 78px 0 80px 0;
+  padding: 61px 0 80px 0;
 }
 
 .slide:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 93% 0px;
 }
   
 .slide:nth-child(2) {
@@ -245,17 +251,18 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
 }
 
-.slide-text p {
+.slide p {
   max-width: 430px;
   margin: 0px;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
+  font-size: 16px;
   line-height: 24px;
 }
 
 .btn {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 16px 0;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -279,7 +286,7 @@ input[type="radio"].visually-hidden {
 /* к услугам */
 
 .services {
-  padding-top: 85px;
+  padding-top: 80px;
 }
 
 .services-list {
@@ -292,12 +299,12 @@ input[type="radio"].visually-hidden {
   padding-right: 60px;
   margin: auto;
   margin-top: 0px;
-  padding-bottom: 85px;
+  padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
 
 .services-item {
-  text-align:left;
+  text-align: left;
   width: 300px;
 }
 
@@ -307,10 +314,16 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: bold;
   color: #000000;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .services-item p{
   line-height: 24px;
+  width: 250px;
+  margin: 0px;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 .order-button {
@@ -318,7 +331,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #ffffff;
   width: 160px;
-  padding: 18px 0;
+  padding: 16px 0;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -374,12 +387,12 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   margin: auto;
   justify-content: space-between;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .about-left-part {
   width: 660px;
-  padding-bottom: 75px;
+  margin: 0px;
 }
 
 .about-left-part h2 {
@@ -389,14 +402,15 @@ input[type="radio"].visually-hidden {
   text-align: left;
   font-weight: 500;
   margin:0px;
-  margin-bottom: 40px;
   padding: 0px;
+  padding-top: 35px;
 }
 
 .about-left-part p {
   line-height: 24px;
   text-align: left;
   margin:0px;
+  margin-top: 34px;
   margin-bottom: 40px;
   padding: 0px;
 }
@@ -405,12 +419,15 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: #000000;
   text-align: left;
+  font-size: 16px;
+  line-height: 24px;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .orders {
+  font-size: 16px;
   line-height: 24px;
   text-align: left;
   margin: 0px;
@@ -419,6 +436,8 @@ input[type="radio"].visually-hidden {
 
 .orders-item {
   position: relative;
+  margin: 0px;
+  margin-bottom: 25px;
 }
 
 .orders-item::before {
@@ -427,12 +446,13 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-  left: -36px;
-  top: 10px;
+  left: -38px;
+  top: 9px;
 }
 
 .about-right-part {
   width: 360px;
+  padding-bottom: 56px;
 }
 
 .about-right-part h3 {
@@ -442,21 +462,16 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #000000;
   font-weight: bold;
-  padding-top: 35px;
+  padding-top: 16px;
   padding-bottom: 35px;
-}
-
-
-.orders li {
-  margin: 0px;
-  margin-bottom: 30px;
 }
 
 .stat-mean {
   font-size: 45px;
   font-weight: bold;
   color: #000000;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
+  padding-right: 12px;
 }
 
 .stat-header {
@@ -470,9 +485,9 @@ input[type="radio"].visually-hidden {
 /* наши клиенты */
 
 .our-clients {
-  padding-bottom: 80px;
   width: 1160px;
   margin: auto;
+  margin-bottom: 80px;
   text-align: center;
 }
 
@@ -484,7 +499,7 @@ input[type="radio"].visually-hidden {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 47px;
-  padding-bottom: 48px;
+  padding-bottom: 46px;
   border-bottom: 2px solid #eeeeee; 
   border-top:  2px solid #eeeeee;
 }
@@ -516,8 +531,8 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
   font-weight: 500;
   margin-top: 0px;
-  padding-top: 60px;
-  padding-bottom: 116px; 
+  padding-top: 62px;
+  padding-bottom: 110px; 
 }
 
 .filter-catalog {
@@ -550,6 +565,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: bold;
   margin: 0px;
+  padding-top: 8px;
 }
 
 .range-controls {
@@ -643,6 +659,12 @@ input[type="radio"].visually-hidden {
   padding-top: 58px;
 }
 
+.form-for-grid p {
+  margin: 0px;
+  margin-top: 16px;
+  margin-bottom: 22px;
+}
+
 .radio-grid:not(checked) {
   position:absolute;
   opacity: 0;
@@ -685,10 +707,16 @@ input[type="radio"].visually-hidden {
 
 .features {
   margin: 0px;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 .form-for-features{
-  padding-bottom: 40px;
+  padding-bottom: 28px;
+}
+
+.form-for-features p {
+  margin: 0px;
+  margin-top: 16px;
+  margin-bottom: 22px;
 }
 
 .checkbox-features:not(checked) {
@@ -735,7 +763,7 @@ input[type="radio"].visually-hidden {
 .show {
   display: block;
   width: 260px;
-  padding: 20px 0;
+  padding: 18px 0;
   text-align: center;
   color: #000000;
   background-color: #eeeeee;
@@ -762,6 +790,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 760px;
   flex-direction: column;
+  padding-top: 10px;
 }
 
 .catalog h3 {
@@ -791,7 +820,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
-  padding-left: 40px;
+  padding-top: 2px;
   margin: 0px;
 } 
 
@@ -864,7 +893,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   padding-top: 40px;
 } 
 
@@ -956,12 +985,15 @@ background-color: #d7373b;
 
 .pagination-item {
   display: inline-block;
-  padding: 18px 20px;
+  padding: 14px 20px;
+  margin-top: 10px;
   margin-right: 10px;
   background-color: #eeeeee;
   color: #000000;
   text-align: center;
   border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .pagination-item:hover,
@@ -978,13 +1010,18 @@ background-color: #d7373b;
   border: 2px solid #dbdbdb;
 }
 
+.next {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
 /* контакты */
 
 .our-contacts {
   position: relative;
   width: 100%;
   min-width: 1160px;
-  max-height: 420px;
+  max-height: 423px;
   margin: auto;
   overflow: hidden; 
 }
@@ -992,6 +1029,7 @@ background-color: #d7373b;
 .our-contacts img {
   width: 100%;
   height: auto;
+  min-height: 420px;
 }
 
 .for-map {
@@ -1008,7 +1046,7 @@ background-color: #d7373b;
   background-color: #ffffff;
   padding: 50px;
   box-sizing: border-box;
-  top: 55px;
+  top: 50px;
   left: 0px;
   width: 319px;
   min-height: 308px;
@@ -1022,7 +1060,7 @@ background-color: #d7373b;
   font-weight: bold;
   margin: 0;
   padding: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
   
 .write-us p {
@@ -1032,12 +1070,12 @@ background-color: #d7373b;
 
 .address {
   margin: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 .phone {
   margin: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   text-transform: lowercase;
 }
 
@@ -1047,7 +1085,7 @@ background-color: #d7373b;
   color: #ffffff;
   display: block;
   width: 219px;
-  padding: 18px 0;
+  padding: 17px 0;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -1068,7 +1106,7 @@ color: rgba(255, 255, 255, 0.3);
   display: flex;
   width: 1160px;
   margin: auto;
-  padding-top: 70px;
+  padding-top: 62px;
   padding-bottom: 78px;
 }
 
@@ -1117,8 +1155,9 @@ color: rgba(255, 255, 255, 0.3);
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  padding-top: 5px;
   margin: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
 .footer-social p {
@@ -1135,7 +1174,7 @@ width: 960px;
 margin: 0 auto;
 padding: 70px 100px 85px 100px;
 box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
-  margin-bottom: 180px;
+margin-bottom: 180px;
 }
 
 .modal-contacts h2 {
