@@ -1,13 +1,11 @@
 body {
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-align: left;
   color: #283136;
-  
   background-color: #ffffff;
 }
 
@@ -19,22 +17,18 @@ a {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 /*к навигации и логотипу*/
-
 .page-header {
   background-color: #eeeeee;
 }
@@ -109,8 +103,7 @@ input[type="radio"].visually-hidden {
   width: 74px;
   height: 2px;
   background-color: #fb565a;
-  top: 30px;
-  
+  top: 30px; 
 }
 
 .basket {
@@ -350,6 +343,7 @@ input[type="radio"].visually-hidden {
 .button-1:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.35) inset;
 }
 
 .button-2 {
@@ -364,6 +358,7 @@ input[type="radio"].visually-hidden {
 .button-2:active {
   background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.35) inset;
 }
 
 .button-3 {
@@ -378,6 +373,7 @@ input[type="radio"].visually-hidden {
 .button-3:active {
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.35) inset;
 }
 
 /* про компанию */
@@ -388,11 +384,13 @@ input[type="radio"].visually-hidden {
   margin: auto;
   justify-content: space-between;
   padding-top: 40px;
+  padding-bottom: 56px;
 }
 
 .about-left-part {
-  width: 660px;
+  width: 800px;
   margin: 0px;
+  padding-right: 140px;
 }
 
 .about-left-part h2 {
@@ -452,7 +450,6 @@ input[type="radio"].visually-hidden {
 
 .about-right-part {
   width: 360px;
-  padding-bottom: 56px;
 }
 
 .about-right-part h3 {
@@ -483,7 +480,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* наши клиенты */
-
 .our-clients {
   width: 1160px;
   margin: auto;
@@ -522,7 +518,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*вторая страница*/
-
 .subtitle {
   font-size: 55px;
   line-height: 55px;
@@ -543,7 +538,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* 2 стр фильтры*/
-
 .filter-for-cost {
   margin: 0;
   padding: 0;
@@ -559,8 +553,13 @@ input[type="radio"].visually-hidden {
   width: 260px;
 }
 
+.filter p {
+  font-family: "Roboto", Arial, sans-serif; 
+}
+
 .filter-name {
   text-transform: uppercase;
+  font-family: "Roboto", Arial, sans-serif; 
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -641,6 +640,7 @@ input[type="radio"].visually-hidden {
 .max-price {
   text-align: right;
 }
+
  /*
 .range-controls .toggle-min {
   left: 50px;
@@ -650,6 +650,7 @@ input[type="radio"].visually-hidden {
   left: 110px;
 }
 */
+
 .price-controls {
   font-size: 0;
 }
@@ -682,7 +683,7 @@ input[type="radio"].visually-hidden {
   top: -3px;
   width: 25px;
   height: 25px;
-  border-radius; 50%;
+  border-radius: 50%;
   background-image:url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -764,6 +765,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 260px;
   padding: 18px 0;
+  font-family: "Roboto", Arial, sans-serif; 
   text-align: center;
   color: #000000;
   background-color: #eeeeee;
@@ -782,10 +784,10 @@ input[type="radio"].visually-hidden {
 .show:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.35) inset;
 }
 
 /*каталог*/
-
 .catalog {
   display: flex;
   width: 760px;
@@ -918,6 +920,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 360px;
   bottom: 0px;
+  padding-bottom: 18px;
   min-height: 235px;
   background-color: #eeeeee;
   width: 100%;
@@ -926,6 +929,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover .product-card {
   display: block;
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 .product-card h3 {
@@ -972,7 +976,6 @@ background-color: #d7373b;
 }
 
 /* пагинатор */
-
 .pagination-list {
   display: flex;
   height: 50px;
@@ -1003,6 +1006,7 @@ background-color: #d7373b;
 
 .pagination-item:active {
   background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .pagination-item.current {
@@ -1016,7 +1020,6 @@ background-color: #d7373b;
 }
 
 /* контакты */
-
 .our-contacts {
   position: relative;
   width: 100%;
@@ -1166,15 +1169,17 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 /*поп-ап*/
-
 .modal-contacts {
-position: relative;
+position: absolute;
+left: 240px;
+top: 1711px;
 box-sizing: border-box;
 width: 960px;
 margin: 0 auto;
 padding: 70px 100px 85px 100px;
 box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 margin-bottom: 180px;
+  background-color: #ffffff;
 }
 
 .modal-contacts h2 {
@@ -1206,7 +1211,7 @@ width: 100%;
 .write input,
 .write textarea {
   border: 2px solid #d7dcde;
-  color: rgba (68, 68, 68, 0.5);
+  color: rgba(68, 68, 68, 0.5);
   width: 100%;
   padding: 10px;
   border-radius: 3px;
@@ -1216,7 +1221,7 @@ width: 100%;
 .write input:hover,
 .write textarea:hover {
   border: 2px solid #b4b9bb;
-  color: rgba (68, 68, 68, 0.5);
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .write input:focus,
@@ -1228,7 +1233,7 @@ width: 100%;
 
 .write input:invalid,
 .write textarea:invalid {
-  background-color: #e74246;
+  border: 2px solid #e74246;
   color: #e74246;
 }
 
