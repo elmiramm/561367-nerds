@@ -115,7 +115,7 @@ input[type="radio"].visually-hidden {
 
 .basket .basket-link { 
   padding-left: 60px;
-   position: relative;
+  position: relative;
 }
 
 .basket-link::before {
@@ -277,7 +277,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* к услугам */
-
 .services {
   padding-top: 80px;
 }
@@ -343,7 +342,7 @@ input[type="radio"].visually-hidden {
 .button-1:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 3px rgba(0, 0, 0, 0.35) inset;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .button-2 {
@@ -358,7 +357,7 @@ input[type="radio"].visually-hidden {
 .button-2:active {
   background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 3px rgba(0, 0, 0, 0.35) inset;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .button-3 {
@@ -373,7 +372,7 @@ input[type="radio"].visually-hidden {
 .button-3:active {
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 3px rgba(0, 0, 0, 0.35) inset;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* про компанию */
@@ -506,8 +505,19 @@ input[type="radio"].visually-hidden {
 
 .client-list-item {
   width: 25%;
-  
-  background-color: aqua;
+  position: relative;
+}
+
+.client-list-item:not(:last-child)::after {
+  content: "";
+  width: 2px;
+  height: 52px;
+  position: absolute;
+  background-color: #eeeeee;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: -1px; 
 }
 
 .client-list-item a:hover,
@@ -518,19 +528,6 @@ input[type="radio"].visually-hidden {
 .client-list-item a:active {
    opacity: 0.1;
 }
-
-.vertical-line {
-  position: relative;
-}
-
-.vertical-line::after {
-  content: "";
-  width: 2px;
-  height: 52px;
-  position: absolute;
-  background-color: #eeeeee;
-}
-
 
 /*вторая страница*/
 .subtitle {
@@ -655,16 +652,6 @@ input[type="radio"].visually-hidden {
 .max-price {
   text-align: right;
 }
-
- /*
-.range-controls .toggle-min {
-  left: 50px;
-}
-
-.range-controls .toggle-max {
-  left: 110px;
-}
-*/
 
 .price-controls {
   font-size: 0;
@@ -799,7 +786,7 @@ input[type="radio"].visually-hidden {
 .show:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px rgba(0, 0, 0, 0.35) inset;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /*каталог*/
@@ -926,6 +913,10 @@ input[type="radio"].visually-hidden {
   right: 0px;
 } 
 
+.catalog-item:hover {
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
 .catalog-item:hover::after {
   opacity: 1;
 }
@@ -944,7 +935,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover .product-card {
   display: block;
-  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 .product-card h3 {
@@ -983,11 +973,12 @@ input[type="radio"].visually-hidden {
 
 .price-btn:hover,
 .price-btn:focus {
- background-color:#e74246;
+   background-color:#e74246;
 }
 
 .price-btn:active {
-background-color: #d7373b;
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* пагинатор */
@@ -1021,7 +1012,8 @@ background-color: #d7373b;
 
 .pagination-item:active {
   background-color: #d5d5d5;
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .pagination-item.current {
@@ -1092,6 +1084,7 @@ background-color: #d7373b;
 }
 
 .phone {
+  display: block;
   margin: 0px;
   margin-bottom: 35px;
   text-transform: lowercase;
@@ -1157,6 +1150,7 @@ color: rgba(255, 255, 255, 0.3);
 
 .social-button:active {
   background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .social-button:active path {
@@ -1184,15 +1178,20 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 /*поп-ап*/
+.page-footer {
+  position: relative;
+}
+
 .modal-contacts {
-  display: none;
   position: absolute;
-  left: 240px;
-  top: 1711px;
+  left: 0px;
+  right: 0px;
+  top: -136px;
   box-sizing: border-box;
   width: 960px;
   margin: 0 auto;
   padding: 70px 100px 85px 100px;
+  text-align: left;
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
   margin-bottom: 180px;
   background-color: #ffffff;
@@ -1209,6 +1208,7 @@ color: rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .write-half {
@@ -1264,6 +1264,8 @@ color: rgba(255, 255, 255, 0.3);
   text-decoration: none;
   border: none;
   border-radius: 3px;
+  margin: 0px;
+  margin-top: 30px; 
 }
 
 .modal-close {

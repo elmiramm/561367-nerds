@@ -122,17 +122,17 @@
       <section class="our-clients">
         <h2 class="visually-hidden" id="clients">Наши клиенты</h2>
         <ul class="client-list">
-          <li class="client-list-item vertical-line">
+          <li class="client-list-item">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-1.png" width="199" height="68" alt="Ссылка на сайт Html academy">
             </a>
           </li>
-          <li class="client-list-item vertical-line">
+          <li class="client-list-item">
             <a href="#">
               <img src="img/logo-2.png" width="209" height="87" alt="Ссылка на сайт Barbershop">
             </a>
           </li>
-          <li class="client-list-item vertical-line">
+          <li class="client-list-item">
             <a href="#">
               <img src="img/logo-3.png" width="185" height="52" alt="Ссылка на сайт Pink">
             </a>
@@ -157,9 +157,9 @@
             191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8<br>
             </p>
-            <p class="phone">
+            <a href="#" class="phone">
             Тел. +7(812) 275-75-75
-            </p>
+            </a>
             <button class="btn-write-us" type="button">Напишите нам</button>
           </div>
         </div>
@@ -185,12 +185,11 @@
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div> 
-    </footer>
-    
-    <section class="modal-contacts" tabindex="-1">
+      
+      <section class="modal-contacts" tabindex="-1">
         <h2>Напишите нам</h2>
         <button class="modal-close" type="button">Закрыть</button>
-      <form class="modal-write-us" action="echo.htmlacademy.ru" method="get">
+        <form class="modal-write-us" action="echo.htmlacademy.ru" method="get">
           <p class="write write-half">
             <label for="user-name">Ваше имя:</label><br>
             <input type="text" name="name" id="user-name" placeholder="Представьтесь, пожалуйста">
@@ -201,10 +200,11 @@
           </p>
           <p class="write write-full">
             <label for="text-letter" class="for-textaria">Текст письма:</label><br>
-            <textarea name="letter" id="text-letter" cols="70" rows="3">В свободной форме</textarea>
+            <textarea name="letter" id="text-letter" cols="70" rows="5">В свободной форме</textarea>
           </p>
         <button class="btn-send" type="submit">Отправить</button>
-      </form>
-    </section>
+        </form>
+      </section>
+    </footer>
   </body>
 </html>
