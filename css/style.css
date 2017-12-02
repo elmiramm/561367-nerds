@@ -384,7 +384,7 @@ input[type="radio"].visually-hidden {
   margin: auto;
   justify-content: space-between;
   padding-top: 40px;
-  padding-bottom: 56px;
+  padding-bottom: 28px;
 }
 
 .about-left-part {
@@ -506,6 +506,8 @@ input[type="radio"].visually-hidden {
 
 .client-list-item {
   width: 25%;
+  
+  background-color: aqua;
 }
 
 .client-list-item a:hover,
@@ -516,6 +518,19 @@ input[type="radio"].visually-hidden {
 .client-list-item a:active {
    opacity: 0.1;
 }
+
+.vertical-line {
+  position: relative;
+}
+
+.vertical-line::after {
+  content: "";
+  width: 2px;
+  height: 52px;
+  position: absolute;
+  background-color: #eeeeee;
+}
+
 
 /*вторая страница*/
 .subtitle {
@@ -1170,37 +1185,38 @@ color: rgba(255, 255, 255, 0.3);
 
 /*поп-ап*/
 .modal-contacts {
-position: absolute;
-left: 240px;
-top: 1711px;
-box-sizing: border-box;
-width: 960px;
-margin: 0 auto;
-padding: 70px 100px 85px 100px;
-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
-margin-bottom: 180px;
+  display: none;
+  position: absolute;
+  left: 240px;
+  top: 1711px;
+  box-sizing: border-box;
+  width: 960px;
+  margin: 0 auto;
+  padding: 70px 100px 85px 100px;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 180px;
   background-color: #ffffff;
 }
 
 .modal-contacts h2 {
-font-size: 45px;
-line-height: 45px;
-color: #000000;
-margin: 0 0 30px 0;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+  margin: 0 0 30px 0;
 }
 
 .modal-write-us {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .write-half {
-width: 360px;
+  width: 360px;
 }
 
 .write-full {
-width: 100%;
+  width: 100%;
 }
 
 .modal-write-us label {
