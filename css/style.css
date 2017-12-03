@@ -565,13 +565,8 @@ input[type="radio"].visually-hidden {
   width: 260px;
 }
 
-.filter p {
-  font-family: "Roboto", Arial, sans-serif; 
-}
-
 .filter-name {
   text-transform: uppercase;
-  font-family: "Roboto", Arial, sans-serif; 
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -1210,7 +1205,6 @@ color: rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-family: "Roboto", Arial, sans-serif;
 }
 
 .write-half {
@@ -1228,6 +1222,7 @@ color: rgba(255, 255, 255, 0.3);
 
 .write input,
 .write textarea {
+  font-family: "Roboto", Arial, sans-serif;
   border: 2px solid #d7dcde;
   color: rgba(68, 68, 68, 0.5);
   width: 100%;
@@ -1259,6 +1254,7 @@ color: rgba(255, 255, 255, 0.3);
   display: block;
   text-align: center;
   background-color: #fb565a;
+  font-family: "Roboto", Arial, sans-serif;
   color: #ffffff;
   width: 260px;
   padding: 18px 0;
