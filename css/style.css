@@ -1069,7 +1069,6 @@ input[type="radio"].visually-hidden {
 }
   
 .write-us p {
-  font-family: "Roboto", Arial, sans-serif; 
   line-height: 18px;
   text-align: left;
 }
@@ -1084,6 +1083,14 @@ input[type="radio"].visually-hidden {
   margin: 0px;
   margin-bottom: 35px;
   text-transform: lowercase;
+}
+
+.phone a:link,
+.phone a:visited,
+.phone a:active,
+.phone a:hover,
+.phone a:focus {
+  color: #000000;
 }
 
 .btn-write-us {
