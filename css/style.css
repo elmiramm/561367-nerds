@@ -1037,6 +1037,12 @@ input[type="radio"].visually-hidden {
   min-height: 420px;
 }
 
+iframe {
+  width: 100%;
+  height: auto;
+  min-height: 420px;
+}
+
 .for-map {
   position: absolute;
   width: 1160px;
