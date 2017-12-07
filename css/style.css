@@ -1194,10 +1194,10 @@ color: rgba(255, 255, 255, 0.3);
 
 .modal-contacts {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0px;
   right: 0px;
-  top: -136px;
+  top: 0px;
   box-sizing: border-box;
   width: 960px;
   margin: 0 auto;
