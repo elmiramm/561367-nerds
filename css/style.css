@@ -207,22 +207,22 @@ input[type="radio"].visually-hidden {
   background-position: 100% 20px;
 }
 
-#point-slide-1:checked ~ .slides .slide:nth-child(1) {
+.point-sl-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
 
-#point-slide-2:checked ~ .slides .slide:nth-child(2) {
+.point-sl-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
 
-#point-slide-3:checked ~ .slides .slide:nth-child(3) {
+.point-sl-3:checked ~ .slides .slide:nth-child(3) {
   display: block;
 }
 
-#point-slide-1:checked ~ .points .points-slide-1::before,
-#point-slide-2:checked ~ .points .points-slide-2::before,
-#point-slide-3:checked ~ .points .points-slide-3::before {
-  content: "";
+.point-sl-1:checked ~ .points .points-slide-1::before,
+.point-sl-2:checked ~ .points .points-slide-2::before,
+.point-sl-3:checked ~ .points .points-slide-3::before {
+  content: ""; 
   position: absolute;
   left: 50%;
   top: 50%;
