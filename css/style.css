@@ -63,10 +63,19 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 440px;
   padding: 0px;
   padding-top: 12px;
   padding-left: 17px;
+}
+
+.site-navigation li {
+  margin-right: 33px;
+}
+
+.site-navigation li:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .site-navigation,
@@ -97,6 +106,13 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.site-navigation .site-navigation-current:hover,
+.site-navigation .site-navigation-current:focus,
+.site-navigation .site-navigation-current:active {
+  color: #000000;
+  opacity: 1;
+}
+
 .site-navigation-current::before {
   content: "";
   position: absolute;
@@ -105,6 +121,7 @@ input[type="radio"].visually-hidden {
   background-color: #fb565a;
   top: 30px; 
 }
+
 
 .basket {
   display: flex;
@@ -288,17 +305,23 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 1160px;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0px;
   padding-right: 60px;
   margin: auto;
   margin-top: 0px;
-  padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
 
 .services-item {
   text-align: left;
   width: 300px;
+  margin-right: 100px;
+  padding-bottom: 80px;
+}
+
+.services-item:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .services-item h3 {
@@ -494,12 +517,14 @@ input[type="radio"].visually-hidden {
 .client-list {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
+  width: 1160px;
   justify-content: space-between;
   align-items: center;
   padding-left: 0px;
   padding-right: 0px;
-  padding-top: 47px;
-  padding-bottom: 46px;
+  padding-top: 46px;
+  padding-bottom: 40px;
   border-bottom: 2px solid #eeeeee; 
   border-top:  2px solid #eeeeee;
 }
@@ -509,8 +534,22 @@ input[type="radio"].visually-hidden {
 }
 
 .client-list-item {
-  width: 25%;
+  width: 300px;
   position: relative;
+}
+
+.client-list-item:first-child,
+.client-list-item:nth-child(4n) {
+  width: 260px;
+  padding: 0px;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.client-list-item:nth-child(4n) {
+  padding-right: 0px;
+  padding-left: 15px;
+  padding-top: 8px;
 }
 
 .client-list-item:not(:last-child)::after {
@@ -893,9 +932,10 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.sorting-item .active,
-.btn-arrow .active {
+.active,
+.active button {
   color: #000000;
+  opacity: 1;
 }
 
 .catalog-list {
@@ -999,7 +1039,7 @@ input[type="radio"].visually-hidden {
   height: 50px;
   padding: 0px;  
   margin: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
   margin-top: 25px;
   align-items: center;
 }
@@ -1080,6 +1120,7 @@ input[type="radio"].visually-hidden {
   left: 0px;
   width: 319px;
   min-height: 308px;
+  margin-top: 4px;
 }
 
 .write-us h3 {
@@ -1090,7 +1131,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   margin: 0;
   padding: 0px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 }
   
 .write-us p {
@@ -1100,13 +1141,13 @@ input[type="radio"].visually-hidden {
 
 .address {
   margin: 0px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .phone {
   display: block;
   margin: 0px;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   text-transform: lowercase;
 }
 
@@ -1125,7 +1166,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   display: block;
   width: 219px;
-  padding: 17px 0;
+  padding: 16px 0;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -1211,6 +1252,47 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-contacts {
   display: none;
   position: fixed;
@@ -1229,6 +1311,11 @@ input[type="radio"].visually-hidden {
 
 .modal-contacts-show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-contacts h2 {
