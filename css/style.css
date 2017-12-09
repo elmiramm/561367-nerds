@@ -468,7 +468,11 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: #000000;
   padding-bottom: 30px;
-  padding-right: 12px;
+  padding-right: 18px;
+}
+
+.percent {
+  font-size: 26px;
 }
 
 .stat-header {
@@ -676,7 +680,7 @@ input[type="radio"].visually-hidden {
 }
 
 .radio-grid:not(checked) + label::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -3px;
@@ -730,7 +734,7 @@ input[type="radio"].visually-hidden {
 }
 
 .checkbox-features:not(checked) + label::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -3px;
@@ -820,7 +824,7 @@ input[type="radio"].visually-hidden {
 .sorting {
   display: flex;
   flex-grow: 1;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding-top: 2px;
   margin: 0px;
 } 
@@ -833,8 +837,13 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-item {
-  padding-right: 27px;
-} 
+  padding-left: 0px;
+  padding-right: 22px;
+}
+
+.sorting-item:first-child {
+  padding-left: 265px;
+}
 
 .sorting-item button {
   background-color: #ffffff;
@@ -884,6 +893,11 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.sorting-item .active,
+.btn-arrow .active {
+  color: #000000;
+}
+
 .catalog-list {
   display: flex;
   width: 760px;
@@ -923,10 +937,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 360px;
   bottom: 0px;
-  padding-bottom: 18px;
-  min-height: 235px;
+  min-height: 230px;
   background-color: #eeeeee;
   width: 100%;
+  padding-bottom: 5px;
   text-align: center;
 }
 
@@ -938,7 +952,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   margin: 0px; 
   padding-bottom: 0px;
-  padding-top: 33px;
+  padding-top: 25px;
 }
 
 .product-card a {
@@ -951,14 +965,15 @@ input[type="radio"].visually-hidden {
 .product-card p {
   color: #666666;
   margin: 0px;
-  padding-top: 18px;
-  padding-bottom: 32px;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 .price-btn {
   display: block;
+  text-transform: uppercase;
   width: 200px;
-  padding: 18px 0;
+  padding: 16px 0;
   background-color: #fb565a;
   color: #ffffff;
   margin: 0 80px;
@@ -1123,8 +1138,8 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-write-us:active {
-background-color: #d7373b;
-color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-social {
@@ -1285,7 +1300,7 @@ color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 3px;
   margin: 0px;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 .modal-close {
@@ -1310,4 +1325,4 @@ color: rgba(255, 255, 255, 0.3);
 
 .modal-close:active {
   opacity: 0.1;
-} 
+}
