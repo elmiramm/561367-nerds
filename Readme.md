@@ -2,6 +2,7 @@
 
 * Студент: [Эльмира Мордаханова](https://up.htmlacademy.ru/htmlcss/19/user/561367).
 * Наставник: `Ирина Шашева`.
+GitHub Page: https://elmiramm.github.io/561367-nerds/
 
 ---
 
